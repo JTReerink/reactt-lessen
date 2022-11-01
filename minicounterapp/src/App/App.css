@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #7FBCD2 20%, #A5F1E9 80%);
+}
+
+#root {
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 4rem;
+    flex-wrap: wrap;
+}

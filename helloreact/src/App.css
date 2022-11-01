@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(177.9deg, #2C7873 3.6%, #6FB98F 80%);
+    min-height: 100vh;
+    font-family: sans-serif;
+    padding: 40px;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 40px;
+    flex-wrap: wrap;
+}

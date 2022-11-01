@@ -1,0 +1,123 @@
+.pokemonCard {
+    width: 30rem;
+    height: 40rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.pokemonCard__header {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.pokemonCard__title {
+    font-size: 200%;
+    font-weight: 400;
+
+}
+
+.pokemonCard__labelWrapper {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.pokemonCard__type {
+    font-size: 70%;
+    padding: 0.3rem;
+    border-radius: 2rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.pokemonCard__type--water{
+    background: #6890F0;
+}
+
+.pokemonCard__type--ground {
+    background: #E0C068;
+}
+
+.pokemonCard__type--ghost {
+    background: #705898;
+}
+
+.pokemonCard__type--fire {
+    background: #F08030;
+    color: #eee;
+}
+
+.pokemonCard__type--grass {
+    background: #78C850;
+}
+
+.pokemonCard__type--fairy {
+    background: #EE99AC;
+}
+
+.pokemonCard__type--psychic {
+    background: #F85888;
+}
+
+.pokemonCard__section {
+    height: 70%;
+}
+
+.pokemonCard__figure {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemonCard__img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.pokemonCard__h3Wrapper {
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.pokemonCard__HP {
+    font-weight: 400;
+    font-size: 90%;
+}
+
+
+.pokemonCard__footer {
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.pokemonCard__button {
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    background: none;
+    font-size: 100%;
+    color: #eee;
+    flex-grow: 1;
+    text-transform: uppercase;
+    font-family: 'Open sans', sans-serif;
+}
+
+.pokemonCard__button--attack {
+    background: #c63939;
+}
+
+.pokemonCard__button--catch {
+    background: #00ad82;
+}
