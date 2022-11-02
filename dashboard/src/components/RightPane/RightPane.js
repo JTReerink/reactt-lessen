@@ -1,16 +1,28 @@
 import "./RightPane.css";
 
-const RightPane = ({ headerText, buttonSymbol, buttonText, productCards }) => {
+const RightPane = ({ headerText, buttonSymbol, buttonText, productCards, onButtonClicked }) => {
+    let addProduct = () => {
+        onButtonClicked()
+    }
+    
     let productCardsToBeRendered = productCards.map(product => {
-        if (product === "Placeholder") {
+        if (product.name === "Placeholder") {
             return (
-                <li className="productsList__item">
-                    <button className="productsList__button">{buttonSymbol || "*"}</button>
+                <li key={product.name} className="productsList__item">
+                    <button onClick={addProduct} className="productsList__button">{buttonSymbol || "*"}</button>
                     <p className="productsList__text">{buttonText || "lorem"}</p>
                 </li>
             )
-        } return null;
-    })
+        } return (
+            <li key={product.name} className="productsList__item">
+                <img className="productsList__img" src={product.img} alt={product.name} />
+                <div className="productsList__fade">
+                    <p className="productsList__imgText">{product.name}</p>
+                </div>
+            </li>
+        )
+    });
+
     return (
         <section className="productsWrapper">
             <header className="header">
